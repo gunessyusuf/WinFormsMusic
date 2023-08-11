@@ -26,7 +26,7 @@ namespace WinFormsMusic
                 MessageBox.Show("Hata meydana geldi! (" + exc.Message + " | " + exc.InnerException?.Message + ")", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+
 
         private void SarkiListesiniDoldur()
         {
@@ -136,9 +136,9 @@ namespace WinFormsMusic
 
         private void Sil(int sarkiId)
         {
-           Sarki varolanSarki = _db.Sarki.Include(sarki => sarki.SarkiTur).SingleOrDefault(sarki => sarki.Id == sarkiId);
+            Sarki varolanSarki = _db.Sarki.Include(sarki => sarki.SarkiTur).SingleOrDefault(sarki => sarki.Id == sarkiId);
 
-            _db.SarkiTur.RemoveRange(varolanSarki.SarkiTur); 
+            _db.SarkiTur.RemoveRange(varolanSarki.SarkiTur);
             _db.Sarki.Remove(varolanSarki);
             _db.SaveChanges();
         }

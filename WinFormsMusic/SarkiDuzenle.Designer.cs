@@ -173,6 +173,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox4);
             Name = "SarkiDuzenle";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Şarkı Düzenle";
             Load += SarkiDuzenle_Load;
             groupBox3.ResumeLayout(false);

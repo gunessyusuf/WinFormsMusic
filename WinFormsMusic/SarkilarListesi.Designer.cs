@@ -137,6 +137,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Name = "SarkilarListesi";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Şarkı Listesi";
             Load += SarkilarListesi_Load;
             ((System.ComponentModel.ISupportInitialize)dgvSarkilar).EndInit();

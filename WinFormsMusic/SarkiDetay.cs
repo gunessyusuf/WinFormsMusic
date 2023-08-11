@@ -20,7 +20,7 @@ namespace WinFormsMusic
         {
             try
             {
-                
+
                 SarkiDetayiniDoldur();
             }
             catch (Exception exc)
@@ -41,7 +41,7 @@ namespace WinFormsMusic
                 Adi = sarki.Adi,
                 Sure = sarki.Sure,
                 SarkiciAdiSoyadiGosterim = sarki.Sarkici.Ad + " " + sarki.Sarkici.Soyad,
-                
+
                 TurleriGosterim = string.Join("\r\n", sarki.SarkiTur.Select(sarkiTur => sarkiTur.Tur.Adi))
             });
 

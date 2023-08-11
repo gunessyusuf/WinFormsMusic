@@ -173,6 +173,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox4);
             Name = "SarkiEkle";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Yeni Şarkı";
             Load += SarkiEkle_Load;
             groupBox3.ResumeLayout(false);

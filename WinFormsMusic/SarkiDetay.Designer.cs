@@ -34,10 +34,10 @@
             label19 = new Label();
             lSarkiciAdiSoyadi = new Label();
             groupBox4 = new GroupBox();
+            lSure = new Label();
+            lAdi = new Label();
             label5 = new Label();
             label7 = new Label();
-            lAdi = new Label();
-            lSure = new Label();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -105,6 +105,24 @@
             groupBox4.TabStop = false;
             groupBox4.Text = "Şarkı Bilgileri";
             // 
+            // lSure
+            // 
+            lSure.AutoSize = true;
+            lSure.Location = new Point(150, 73);
+            lSure.Name = "lSure";
+            lSure.Size = new Size(51, 25);
+            lSure.TabIndex = 2;
+            lSure.Text = "lSure";
+            // 
+            // lAdi
+            // 
+            lAdi.AutoSize = true;
+            lAdi.Location = new Point(149, 36);
+            lAdi.Name = "lAdi";
+            lAdi.Size = new Size(43, 25);
+            lAdi.TabIndex = 1;
+            lAdi.Text = "lAdi";
+            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -125,24 +143,6 @@
             label7.TabIndex = 0;
             label7.Text = "Adı:";
             // 
-            // lAdi
-            // 
-            lAdi.AutoSize = true;
-            lAdi.Location = new Point(149, 36);
-            lAdi.Name = "lAdi";
-            lAdi.Size = new Size(43, 25);
-            lAdi.TabIndex = 1;
-            lAdi.Text = "lAdi";
-            // 
-            // lSure
-            // 
-            lSure.AutoSize = true;
-            lSure.Location = new Point(150, 73);
-            lSure.Name = "lSure";
-            lSure.Size = new Size(51, 25);
-            lSure.TabIndex = 2;
-            lSure.Text = "lSure";
-            // 
             // SarkiDetay
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -152,6 +152,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox4);
             Name = "SarkiDetay";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Sarki Detayı";
             Load += SarkiDetay_Load;
             groupBox3.ResumeLayout(false);
