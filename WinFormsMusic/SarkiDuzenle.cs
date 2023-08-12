@@ -75,28 +75,25 @@ namespace WinFormsMusic
             tbSure.Text = varolanSarki.Sure.ToString();
             ddlSarkici.SelectedValue = varolanSarki.SarkiciId;
 
-           //var sarkiTurleri = varolanSarki.SarkiTur.ToList();
+            //var sarkiTurleri = varolanSarki.SarkiTur.ToList();
 
             if (varolanSarki.SarkiTur is not null && varolanSarki.SarkiTur.Count > 0)
             {
                 for (int i = 0; i < lbTurler.Items.Count; i++)
                 {
 
-                
-                
                     foreach (var sarkiTur in varolanSarki.SarkiTur)
                     {
 
+                        var turDto = lbTurler.Items[i] as TurDTO;
+                        if (turDto is not null && turDto.Id == sarkiTur.TurId)
+                        {
+                            lbTurler.SetSelected(i, true);
+                            break;
+                        }
 
-                        
-                            var turDto = lbTurler.Items[i] as TurDTO;
-                            if (turDto is not null && turDto.Id == sarkiTur.TurId)
-                            {
-                                lbTurler.SetSelected(i, true);
-                                break;
-                            }
-                        
                     }
+
                 }
             }
 
